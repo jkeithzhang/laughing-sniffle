@@ -69,7 +69,7 @@ class People extends React.Component {
 			<div className={`content row ${isLoading? 'is-loading' : ''}`}>
 				{
 					!isLoading && contacts.length>0 ? contacts.map(contact=> {
-						return 	<div className="name-card col-md-2 row">
+						return 	<div className="name-card col-md-3 row">
 									<div className="col-md-4">
 										<img src={contact.pic}/>
 									</div>
