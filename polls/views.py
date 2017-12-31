@@ -42,8 +42,10 @@ def index(request):
 	# context={
 	# 	'latest_question_list': latest_question_list,
 	# }
+
 	posts_serialized = serializers.serialize('json', latest_question_list)
 	return JsonResponse(posts_serialized, safe=False)
+
 	# return render(request, 'polls/index.html', context)
 
 # def detail(request, question_id):
